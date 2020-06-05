@@ -11,7 +11,6 @@ export default function genCode(spec: ApiSpec, operations: ApiOperation[], optio
   genService(options)
   genSpec(spec, options)
   genOperations(spec, operations, options)
-  genTypes(spec, options)
   if (options.redux) genReduxActions(spec, operations, options)
   if (options.vuex) genVuexActions(spec, operations, options)
   return spec

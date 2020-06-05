@@ -48,6 +48,7 @@
     "codegen"
   ],
   "dependencies": {
+    "@types/isomorphic-fetch": "0.0.35",
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
     "isomorphic-fetch": "^2.2.1",
