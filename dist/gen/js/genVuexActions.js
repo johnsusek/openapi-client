@@ -50,7 +50,7 @@ function renderVuexActionBlock(spec, op, options) {
             params = 'options';
     }
     return `
-  async ${op.id}({ commit }${paramSignature ? ', ' + paramSignature : ''})${isTs ? ': Promise<any>' : ''} {
+  async ${op.id}({ commit }${paramSignature ? ', ' + paramSignature : ''} = {})${isTs ? ': Promise<any>' : ''} {
     const response = await ${op.group}.${op.id}(${params});
 
     if (response.error) {
